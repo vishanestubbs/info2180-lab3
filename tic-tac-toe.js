@@ -7,10 +7,6 @@ document.addEventListener("DOMContentLoaded",function(){
     sqaures.forEach(div=> div.className="square");
     sqaures.forEach(div=>div.id="")
 
-    
-    
-
-    
 
     /* Exercise 2 */
     for (const item of sqaures){
@@ -55,7 +51,7 @@ document.addEventListener("DOMContentLoaded",function(){
     });
 
 });
-
+//Exercise 4
 const winningCombinations =[
     [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
     [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
@@ -64,7 +60,7 @@ const winningCombinations =[
 function winner(player,list){
     return winningCombinations.some(c=> c.every(idx=>list[idx]==player))
 }
-
+//Exercise 5
 function restarts(sqaures){
         gameState=Array(9).fill(null);
         sqaures.forEach(div=> div.className="square");
